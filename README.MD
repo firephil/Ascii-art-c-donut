@@ -8,7 +8,7 @@
 * It needs ANSI- or VT100-like terminal emulation (Linux,BSD,Mac,cygwin,minGW)
 
 
-// start c code
+
                   k;double sin()
               ,cos();main(){float A=
             0,B=0,i,j,z[1760];char b[
@@ -30,5 +30,3 @@
             ~::==!!!**********!!!==::-
               .,~~;;;========;;;:~-.
                   ..,--------,*/
-
-//end              
