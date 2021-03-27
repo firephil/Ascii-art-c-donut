@@ -4,3 +4,4 @@
 [0m2021.03.27 17:30:09 WARN  no build tool detected in workspace 'C:\DEV\Ascii-art-c-donut'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 Ìבס 27, 2021 5:42:11 Ì.Ì. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.03.27 17:55:31 INFO  shutting down Metals[0m
