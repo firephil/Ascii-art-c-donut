@@ -1,4 +1,38 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <errno.h>
+
+/* 
+    replaced usleep with nano sleep and the custom implementation bellow
+
+msleep(): Sleep for the requested number of milliseconds. 
+
+*/
+int msleep(long msec)
+{
+    struct timespec ts;
+    int res;
+
+    if (msec < 0)
+    {
+        errno = EINVAL;
+        return -1;
+    }
+
+    ts.tv_sec = msec / 1000;
+    ts.tv_nsec = (msec % 1000) * 1000000;
+
+    do {
+        res = nanosleep(&ts, &ts);
+    } while (res && errno == EINTR);
+
+    return res;
+}
+
 int main() {
+
     float A = 0, B = 0;
     float i, j;
     int k;
@@ -37,7 +71,9 @@ int main() {
             A += 0.00004;
             B += 0.00002;
         }
-        usleep(30000);
+        msleep(90000);
     }
     return 0;
 }
+    
+

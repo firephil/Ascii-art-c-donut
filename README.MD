@@ -1,7 +1,12 @@
+### Rotating Donut Ascii Art
+
 ## Example taken from the following website https://www.a1k0n.net/2006/09/15/obfuscated-c-donut.html
 
+## Deof version by Lex Fridman https://youtu.be/DEqXNfs_HhY
 
-### Rotating donut ascii art
+## Optimized version without math library dependency https://www.a1k0n.net/2021/01/13/optimizing-donut.html
+
+
 
 * compile with gcc             -o donut donut.c -lm (for .nix os)
 * compile with mingw32-gcc.exe -o donut donut.c -lm
