@@ -8,8 +8,7 @@
 
 
 
-* compile with gcc             -o donut donut.c -lm (for .nix os)
-* compile with mingw32-gcc.exe -o donut donut.c -lm
+* compile with gcc -o donut donut.c -lm
 
 * It needs ANSI- or VT100-like terminal emulation (Linux,BSD,Mac,cygwin,minGW)
 
